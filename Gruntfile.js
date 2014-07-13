@@ -40,7 +40,12 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    coffee: {
+    cjsx: {
+      compileReact: {
+        files: {
+          'tmp/react/coffee-react.js': ['test/fixtures/coffee-react.cjsx'],
+        }
+      },
       compileDefault: {
         files: {
           'tmp/default/coffee.js': ['test/fixtures/coffee1.coffee'],
@@ -147,7 +152,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'coffee', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'cjsx', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test', 'build-contrib']);

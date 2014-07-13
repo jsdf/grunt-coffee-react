@@ -1,23 +1,23 @@
 {
-  "name": "grunt-contrib-coffee",
-  "description": "Compile CoffeeScript files to JavaScript.",
-  "version": "0.10.1",
-  "homepage": "https://github.com/gruntjs/grunt-contrib-coffee",
+  "name": "grunt-contrib-coffee-react",
+  "description": "Compile CJSX files to JavaScript.",
+  "version": "0.4.0",
+  "homepage": "https://github.com/jsdf/grunt-contrib-coffee-react",
   "author": {
     "name": "Grunt Team",
     "url": "http://gruntjs.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gruntjs/grunt-contrib-coffee.git"
+    "url": "git://github.com/jsdf/grunt-contrib-coffee-react.git"
   },
   "bugs": {
-    "url": "https://github.com/gruntjs/grunt-contrib-coffee/issues"
+    "url": "https://github.com/jsdf/grunt-contrib-coffee-react/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/gruntjs/grunt-contrib-coffee/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jsdf/grunt-contrib-coffee-react/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
@@ -27,7 +27,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "coffee-script": "~1.7.0",
+    "coffee-react": "~0.4.0",
     "chalk": "~0.4.0",
     "lodash": "~2.4.1"
   },

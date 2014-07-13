@@ -13,7 +13,7 @@ module.exports = function(grunt) {
   var chalk = require('chalk');
   var _ = require('lodash');
 
-  grunt.registerMultiTask('coffee', 'Compile CoffeeScript files into JavaScript', function() {
+  grunt.registerMultiTask('cjsx', 'Compile CJSX files into JavaScript', function() {
     var options = this.options({
       bare: false,
       join: false,
@@ -163,7 +163,7 @@ module.exports = function(grunt) {
     }
 
     try {
-      return require('coffee-script').compile(code, coffeeOptions);
+      return require('coffee-react').compile(code, coffeeOptions);
     } catch (e) {
       if (e.location == null ||
           e.location.first_column == null ||

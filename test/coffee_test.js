@@ -67,6 +67,16 @@ exports.coffee = {
 
     test.done();
   },
+  compileReact: function(test) {
+    test.expect(1);
+
+    assertFileEquality(test,
+      'tmp/react/coffee-react.js',
+      'test/expected/react/coffee-react.js',
+      'Should compile CJSX to javascript');
+
+    test.done();
+  },
   compileJoined: function(test) {
     test.expect(4);
 
