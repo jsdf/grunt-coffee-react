@@ -1,23 +1,23 @@
 {
-  "name": "grunt-contrib-coffee-react",
+  "name": "grunt-coffee-react",
   "description": "Compile CJSX files to JavaScript.",
   "version": "0.4.0",
-  "homepage": "https://github.com/jsdf/grunt-contrib-coffee-react",
+  "homepage": "https://github.com/jsdf/grunt-coffee-react",
   "author": {
     "name": "Grunt Team",
     "url": "http://gruntjs.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jsdf/grunt-contrib-coffee-react.git"
+    "url": "git://github.com/jsdf/grunt-coffee-react.git"
   },
   "bugs": {
-    "url": "https://github.com/jsdf/grunt-contrib-coffee-react/issues"
+    "url": "https://github.com/jsdf/grunt-coffee-react/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jsdf/grunt-contrib-coffee-react/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jsdf/grunt-coffee-react/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {

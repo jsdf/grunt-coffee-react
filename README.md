@@ -1,4 +1,4 @@
-# grunt-contrib-coffee-react 
+# grunt-coffee-react 
 Compile [coffee-react-transform](https://github.com/jsdf/coffee-react-transform) CJSX files to JavaScript.
 
 ## Getting Started
@@ -7,13 +7,13 @@ This plugin requires Grunt `~0.4.0`
 **note**
 
 ```shell
-npm install grunt-contrib-coffee-react --save-dev
+npm install grunt-coffee-react --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-coffee-react');
+grunt.loadNpmTasks('grunt-coffee-react');
 ```
 
 ## 'cjsx' task
