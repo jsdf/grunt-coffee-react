@@ -4,6 +4,8 @@ Compile [coffee-react-transform](https://github.com/jsdf/coffee-react-transform)
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
 
+Version 1.0 and higher of this plugin are only compatible with React 0.11.2 and higher
+
 **note**
 
 ```shell
