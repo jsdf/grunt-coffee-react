@@ -27,7 +27,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "coffee-react": "^1.0.1",
+    "coffee-react": "^1.0.3",
     "chalk": "~0.4.0",
     "lodash": "~2.4.1"
   },
