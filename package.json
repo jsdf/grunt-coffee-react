@@ -1,7 +1,7 @@
 {
   "name": "grunt-coffee-react",
   "description": "Compile CJSX files to JavaScript.",
-  "version": "2.4.1",
+  "version": "3.0.0",
   "homepage": "https://github.com/jsdf/grunt-coffee-react",
   "author": {
     "name": "Grunt Team",
