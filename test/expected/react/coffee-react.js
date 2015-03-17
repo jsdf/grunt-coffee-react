@@ -4,7 +4,7 @@
 
   Car = React.createClass({
     render: function() {
-      var _ref;
+      var ref;
       return React.createElement(Vehicle, {
         "doors": 4.,
         "locked": isLocked(),
@@ -12,7 +12,7 @@
         "on": true
       }, React.createElement(Parts.FrontSeat, null), React.createElement(Parts.BackSeat, null), React.createElement("p", {
         "className": "kickin"
-      }, "Which seat can I take? ", ((_ref = this.props) != null ? _ref.seat : void 0) || 'none'));
+      }, "Which seat can I take? ", ((ref = this.props) != null ? ref.seat : void 0) || 'none'));
     }
   });
 
