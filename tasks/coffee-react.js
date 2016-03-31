@@ -13,6 +13,10 @@ module.exports = function(grunt) {
   var chalk = require('chalk');
   var _ = require('lodash');
 
+  var filesCreated = 0;
+  var mapsCreated = 0;
+
+
   grunt.registerMultiTask('cjsx', 'Compile CJSX files into JavaScript', function() {
     var options = this.options({
       bare: false,
@@ -23,7 +27,6 @@ module.exports = function(grunt) {
     });
 
     options.separator = grunt.util.normalizelf(options.separator);
-
     this.files.forEach(function(f) {
       var validFiles = removeInvalidFiles(f);
 
@@ -38,6 +41,8 @@ module.exports = function(grunt) {
         writeCompiledFile(f.dest, concatOutput(validFiles, options));
       }
     });
+    grunt.log.writeln(chalk.green('>> ') + filesCreated + ' files and ' + mapsCreated +
+    ' source maps created.');
   });
 
   var isLiterate = function(ext) {
@@ -229,12 +234,18 @@ module.exports = function(grunt) {
 
   var writeCompiledFile = function(path, output) {
     if (writeFile(path, output)) {
-      grunt.log.writeln('File ' + chalk.cyan(path) + ' created.');
+      if (grunt.cli.options.verbose) {
+        grunt.log.writeln('File ' + chalk.cyan(path) + ' created.');
+      }
+      filesCreated++;
     }
   };
   var writeSourceMapFile = function(path, output) {
     if (writeFile(path, output)) {
-      grunt.log.writeln('File ' + chalk.cyan(path) + ' created (source map).');
+      if (grunt.cli.options.verbose) {
+        grunt.log.writeln('File ' + chalk.cyan(path) + ' created (source map).');
+      }
+      mapsCreated++;
     }
   };
 };
