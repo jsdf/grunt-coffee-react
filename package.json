@@ -1,11 +1,11 @@
 {
   "name": "grunt-coffee-react",
   "description": "Compile CJSX files to JavaScript.",
-  "version": "3.0.0",
+  "version": "5.0.0",
   "homepage": "https://github.com/jsdf/grunt-coffee-react",
   "author": {
-    "name": "Grunt Team",
-    "url": "http://gruntjs.com/"
+    "name": "James Friend",
+    "url": "https://github.com/jsdf"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "chalk": "~0.4.0",
-    "coffee-react": "^3.0.0",
+    "coffee-react": "^5.0.0",
     "lodash": "~2.4.1"
   },
   "devDependencies": {
@@ -39,7 +39,7 @@
     "grunt": "~0.4.1"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin"

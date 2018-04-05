@@ -2,9 +2,9 @@
 Compile [coffee-react-transform](https://github.com/jsdf/coffee-react-transform) CJSX files to JavaScript.
 
 ## Getting Started
-This plugin requires Grunt `~0.4.0`
+This plugin requires Grunt `>=0.4.0`
 
-Version 1.0 and higher of this plugin are only compatible with React 0.11.2 and higher
+For version compatibility with React, see [coffee-react version compatibility](https://github.com/jsdf/coffee-react#version-compatibility)
 
 **note**
 
